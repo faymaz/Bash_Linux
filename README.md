@@ -15,6 +15,10 @@ $HOSTNAME - The hostname of the machine the script is running on.
 $SECONDS - The number of seconds since the script was started.
 $RANDOM - Returns a different random number each time is it referred to.
 $LINENO - Returns the current line number in the Bash script.
+$HOME - /Users/faymaz
+$SHELL -
+$LOGNAME -
+$USER -
 ```
 env list of all local variables
 
@@ -346,6 +350,18 @@ ${#variable}
 ```
 
 = is slightly different to -eq. [ 001 = 1 ] will return false as = does a string comparison (ie. character for character the same) whereas -eq does a numerical comparison meaning [ 001 -eq 1 ] will return true.
+
+*) set -e
+In bash scripting, the "set +e ” command is used to temporarily disable the exit-on-error feature. This feature, when enabled, “set -e” causes a shell script to immediately terminate if any command within it returns a non-zero exit status.
+
+```
+cat << EOF
+Bla bla
+bla balalalals
+Check out the README file on GitHub to do 1 quick thing manually:
+You can safely close this terminal.
+EOF
+```
 
 
 
