@@ -368,7 +368,7 @@ EOF
 
 ```
 $ wget -O- https://repository.faymaz.com/deb/faymaz.gpg | sudo tee /usr/share/keyrings/faymaz-archive-keyring.gpg
-$ echo "deb     [signed-by=/usr/share/keyrings/faymaz-archive-keyring.gpg] https://repository.faymaz.com/deb/pub all main" | sudo tee /etc/apt/sources.list.d/faymaz.cz.list
+$ echo "deb     [signed-by=/usr/share/keyrings/faymaz-archive-keyring.gpg] https://repository.faymaz.com/deb/pub all main" | sudo tee /etc/apt/sources.list.d/faymaz.com.list
 
 ```
 And then you can install a package picpro
